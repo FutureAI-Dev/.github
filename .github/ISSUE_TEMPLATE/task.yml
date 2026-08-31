@@ -1,0 +1,25 @@
+name: Task
+description: Track focused implementation, maintenance, documentation, or infrastructure work.
+title: ""
+type: Task
+labels: []
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: State what needs to be done and why.
+      placeholder: Configure the CI workflow to cache Python dependencies and reduce execution time.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: List the results that will show the task is complete.
+      placeholder: |
+        - [ ] Dependencies are cached using the lockfile.
+        - [ ] Later workflow runs restore the cache.
+    validations:
+      required: true

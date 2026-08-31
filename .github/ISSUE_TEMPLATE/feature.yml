@@ -1,0 +1,38 @@
+name: Feature
+description: Propose a new user-facing or system capability.
+title: ""
+type: Feature
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Keep the feature focused on one outcome.
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story
+      description: Describe who needs the capability, what they need, and why it matters.
+      placeholder: As a [user or system], I want [capability], so that [benefit].
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: List observable, testable requirements. Prefer a checklist or Given/When/Then statements.
+      placeholder: |
+        - [ ] Given [context], when [action], then [expected result].
+        - [ ] Given [edge case], when [action], then [expected result].
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technical notes
+      description: Optional. Add important constraints, suggested architecture, dependencies, or exclusions.
+      placeholder: Add only the technical details needed to understand the work.
+    validations:
+      required: false

@@ -1,0 +1,49 @@
+name: Bug
+description: Report behavior that is incorrect, broken, or unexpected.
+title: ""
+type: Bug
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Describe the smallest reproducible example you can. Remove sensitive data from all evidence.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: Explain what happens, what should happen instead, and the impact.
+      placeholder: When [condition], [incorrect behavior] happens. Instead, [expected behavior] should happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the shortest reliable sequence that demonstrates the bug.
+      placeholder: |
+        1. Do ...
+        2. Do ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: resolved-when
+    attributes:
+      label: Resolved when
+      description: List the observable results that will prove the bug is fixed.
+      placeholder: |
+        - [ ] The reproduction steps no longer trigger the bug.
+        - [ ] A regression test covers the scenario.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Optional. Add sanitized logs, screenshots, traces, environment details, or other supporting evidence.
+    validations:
+      required: false
